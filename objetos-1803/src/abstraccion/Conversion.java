@@ -2,6 +2,8 @@ package abstraccion;
 
 public class Conversion {
 
+    // Conversión de grados Centígrados a Farenheit
+    
     private Grados grados;
 
     public float centigradosAFarenheit() {
@@ -17,5 +19,22 @@ public class Conversion {
     public void setGrados(Grados grados) {
         this.grados = grados;
     }
+    
+    // Conversión de Metros a Pies
 
+    private Distancia distancia;
+
+    public float metrosApies() {
+        // Este método tiene lógica
+        float resultado = distancia.getMetros() * 3.2808f;
+        return resultado;
+    }
+
+    public Distancia getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(Distancia distancia) {
+        this.distancia = distancia;
+    }
 }

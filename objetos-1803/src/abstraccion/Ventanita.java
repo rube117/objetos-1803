@@ -124,6 +124,20 @@ public class Ventanita extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        // Distancia
+        
+        // Crear un objeto de tipo Distancia
+        Distancia d = new Distancia();
+
+        // A este objeto le asignamos un valor a su atributo metros
+        d.setMetros(Float.parseFloat(jTextField2.getText()));
+
+        // Cremos un objeto de la clase conversión
+        Conversion m = new Conversion();
+        m.setDistancia(d);
+
+        // Aplicar el modelo
+        jLabel4.setText(""+m.metrosApies());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
