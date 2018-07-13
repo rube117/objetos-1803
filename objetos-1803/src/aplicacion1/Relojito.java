@@ -5,6 +5,7 @@
  */
 package aplicacion1;
 
+import java.awt.Color;
 import java.time.LocalTime;
 
 /**
@@ -27,6 +28,7 @@ public class Relojito extends javax.swing.JFrame {
                     int hora = tiempo.getHour();
                     int minuto = tiempo.getMinute();
                     int segundo = tiempo.getSecond();
+                    jLabel1.setForeground(Color.red);
                     jLabel1.setText("La hora es: " + hora + ":" + minuto + ":" + segundo);
                     try {
                         // E4
